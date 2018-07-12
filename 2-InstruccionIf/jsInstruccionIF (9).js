@@ -1,15 +1,13 @@
 function mostrar()
 {
-	//Genero el número RANDOM entre 1 y 10 
+	//Genero el número RANDOM entre 1 y 10
 
-   var boton;
+    var max = 11;
+    var min = 1;
+    var mostrar;
 
-   boton = document.getElementById("FormIngreso").value;
+    mostrar = Math.floor (Math.random()*(max - min) + min);
 
-   boton = RandomSource(1,10);
-
-   alert(boton);
-
-
+    alert(mostrar);
 
 }//FIN DE LA FUNCIÓN
