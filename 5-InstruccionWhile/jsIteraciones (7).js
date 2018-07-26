@@ -7,7 +7,9 @@ function mostrar()
     var numero;
 	var promedio;
 
-	while(repuesta == "si")
+   // respuesta = prompt("Desea sumar numeros y obtener el promedio?");
+
+	while(respuesta == "si")
 	{
 		numero = parseInt(prompt("Ingrese un Numero:"));
 
@@ -18,9 +20,9 @@ function mostrar()
 
 	}
 
-promedio = 
+promedio = acumulador / contador;
 
 document.getElementById('suma').value=acumulador;
-document.getElementById('promedio').value=;
+document.getElementById('promedio').value=promedio;
 
 }//FIN DE LA FUNCIÓN
