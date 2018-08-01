@@ -10,5 +10,65 @@ E.	Si el importe final con descuento suma más de $120  se debe sumar un 10% de 
  */
 function CalcularPrecio () 
 {
- 	
+ 	 var preciolamparas = 35;
+     var contidadLamparas = 0;
+     var precioFinal;
+     var marcaLamparas;
+     var descuento;
+     var porcentaje; 
+     var resultado;
+     var impuesto;
+
+     cantidadLamparas = parseint(document.getElementById("Cantidad").value);
+     marcaLamparas = document.getElementById("Marca").value;
+
+     switch( cantidadLamparas)
+     {
+         case "1":
+         case "2":
+                 porcentaje = 0;
+                 break;
+         case "3":
+                 if( marcaLamparas == "ArgentinaLuz" )
+                 {
+                  //desuento del 15%
+                  porcentaje = 15;
+                 }
+                 else if(marcaLamparas == "FelipeLamparas")
+                 {
+                 //desuento del 10%
+                 porcentaje = 10;
+                 
+                 }
+                 else
+                 {
+                 //desuento del 5%
+                 porcentaje = 5;
+                
+                 }
+                 break;
+         case "4":
+                 if( marcaLamparas == "ArgentinaLuz" || marcaLamparas == "FelipeLamparas")
+                 {
+                     porcentaje = 25;
+                 }
+                 else
+                 {
+                     porcentaje = 20;
+                 }
+                 break;
+         case "5":
+                 if(marcaLamparas == "ArgentinaLuz")
+                 {
+                     porcentaje = 40;
+                 }
+                 else
+                 {
+                     porcentaje = 30;
+                 }
+                 break;
+         default:
+                porcentaje = 50;
+
+     }
 }
