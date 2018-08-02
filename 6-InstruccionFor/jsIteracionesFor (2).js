@@ -1,7 +1,7 @@
 function mostrar()
 {
 
- for(var i = 1; i<=10 ; i++)
+ for(var i = 10; i>0 ; i--)
  {
      document.write(i + "<br>");
  }
